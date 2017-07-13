@@ -1,3 +1,4 @@
+#include <fstream>
 #include <iostream>
 #include <ctime>
 
@@ -7,24 +8,38 @@
 using namespace std;
 
 
-int main() {
-    std::cout << "Hello, World!" << std::endl;
-    srand((u_int)time(0));
+void parser(string name) {
 
-    const int N = 5;
-    vector<Node*> nodes;
-
-    for (int i = 0; i < N; ++i) {
-        int t = rand() % 100;
-        cout <<  t << endl;
-        nodes.push_back(new Node((uint64_t)t));
+    ifstream fin(name);
+    if (!fin.is_open()) {
+        cout << "File " << name << " doesn't exist!" << endl;
+        return;
     }
-    MinHeap heap(nodes);
-    cout << endl;
+    for (int i = 0; i < 10; ++i) {
+        int ch = fin.get();
+        cout << ch << " = " << (char)ch << endl;
+    }
+    fin.close();
+}
 
-    CodeTree tree(&heap);
-    tree.printTree();
+int main() {
+//    std::cout << "Hello, World!" << std::endl;
+//    srand((u_int)time(0));
+//
+//    const int N = 5;
+//    vector<Node*> nodes;
+//
+//    for (int i = 0; i < N; ++i) {
+//        int t = rand() % 100;
+//        cout <<  t << endl;
+//        nodes.push_back(new Node((uint64_t)t));
+//    }
+//    MinHeap heap(nodes);
+//    cout << endl;
+//
+//    CodeTree tree(&heap);
+//    tree.printTree();
 
-
+    parser("test.txt");
     return 0;
 }
