@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/CodeTree.cpp
+CodeTree.hpp
+/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/CodeTree.hpp
+
+/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/CodeTree.hpp
+MinHeap.hpp
+/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/MinHeap.hpp
+
+/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/MinHeap.cpp
+MinHeap.hpp
+/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/MinHeap.hpp
+
+/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/MinHeap.hpp
+cassert
+-
+vector
+-
+iostream
+-
+
+/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/main.cpp
+iostream
+-
+ctime
+-
+MinHeap.hpp
+/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/MinHeap.hpp
+CodeTree.hpp
+/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/CodeTree.hpp
+

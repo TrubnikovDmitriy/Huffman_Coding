@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/_.dir/main.cpp.o CMakeFiles/_.dir/MinHeap.cpp.o CMakeFiles/_.dir/CodeTree.cpp.o  -o _ 

@@ -1,0 +1,3 @@
+/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/cmake-build-debug/CMakeFiles/_.dir
