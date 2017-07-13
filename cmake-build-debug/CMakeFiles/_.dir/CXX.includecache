@@ -33,6 +33,8 @@ iostream
 -
 ctime
 -
+map
+-
 MinHeap.hpp
 /home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/MinHeap.hpp
 CodeTree.hpp

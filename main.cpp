@@ -1,6 +1,7 @@
 #include <fstream>
 #include <iostream>
 #include <ctime>
+#include <map>
 
 #include "MinHeap.hpp"
 #include "CodeTree.hpp"
@@ -8,18 +9,36 @@
 using namespace std;
 
 
-void parser(string name) {
+vector<Node*> parser(string name) {
+
+    vector<Node*> frequency;
 
     ifstream fin(name);
     if (!fin.is_open()) {
         cout << "File " << name << " doesn't exist!" << endl;
-        return;
+        return frequency;
     }
-    for (int i = 0; i < 10; ++i) {
-        int ch = fin.get();
-        cout << ch << " = " << (char)ch << endl;
+
+    map<u_short, uint64_t> freq_char;
+    u_short ch = (u_short)fin.get();
+    pair<map<u_short, uint64_t>::iterator, bool> is_new;
+
+    while(!fin.eof()) {
+
+        // Считываем по одному символу и пытаемся добавить в словарь,
+        // если ключ (буква) уже существует, то инкрементируем значение.
+
+        is_new = freq_char.insert( pair<u_short, uint64_t>(ch, 1) );
+        if (!is_new.second)
+            ++freq_char[ch];
+        ch = (u_short)fin.get();
     }
     fin.close();
+
+    for (auto i = freq_char.begin(); i != freq_char.end(); ++i)
+        frequency.push_back(new Node(i->first, i->second));
+
+    return frequency;
 }
 
 int main() {
@@ -40,6 +59,6 @@ int main() {
 //    CodeTree tree(&heap);
 //    tree.printTree();
 
-    parser("test.txt");
+    vector<Node*> frequency = parser("test.txt");
     return 0;
 }

@@ -4,6 +4,8 @@
 
 #include "CodeTree.hpp"
 
+#define UNION_SYMBOLS 0
+
 
 CodeTree::CodeTree(MinHeap *minHeap) {
 
@@ -29,8 +31,7 @@ CodeTree::~CodeTree() {
 
 Node* CodeTree::makeBranch(Node *left, Node *right) {
 
-    Node* parent = new Node(left->amount + right->amount);
-    // TODO a
+    Node* parent = new Node(UNION_SYMBOLS, left->amount + right->amount);
     parent->left = left;
     parent->right = right;
     return parent;
