@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/_.dir/MinHeap.cpp.o"
   "CMakeFiles/_.dir/CodeTree.cpp.o"
   "CMakeFiles/_.dir/CodeDictionary.cpp.o"
+  "CMakeFiles/_.dir/BinaryWriter.cpp.o"
   "_.pdb"
   "_"
 )

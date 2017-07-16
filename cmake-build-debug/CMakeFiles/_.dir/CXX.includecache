@@ -6,6 +6,18 @@
 
 #IncludeRegexTransform: 
 
+/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/BinaryWriter.cpp
+BinaryWriter.hpp
+/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/BinaryWriter.hpp
+Utils.hpp
+/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/Utils.hpp
+
+/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/BinaryWriter.hpp
+iostream
+-
+fstream
+-
+
 /home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/CodeDictionary.cpp
 CodeDictionary.hpp
 /home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/CodeDictionary.hpp
@@ -59,4 +71,6 @@ CodeTree.hpp
 /home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/CodeTree.hpp
 CodeDictionary.hpp
 /home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/CodeDictionary.hpp
+BinaryWriter.hpp
+/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/BinaryWriter.hpp
 

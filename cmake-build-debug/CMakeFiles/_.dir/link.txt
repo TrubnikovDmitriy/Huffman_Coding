@@ -1,1 +1,1 @@
-/usr/bin/c++   -g   CMakeFiles/_.dir/main.cpp.o CMakeFiles/_.dir/MinHeap.cpp.o CMakeFiles/_.dir/CodeTree.cpp.o CMakeFiles/_.dir/CodeDictionary.cpp.o  -o _ 
+/usr/bin/c++   -g   CMakeFiles/_.dir/main.cpp.o CMakeFiles/_.dir/MinHeap.cpp.o CMakeFiles/_.dir/CodeTree.cpp.o CMakeFiles/_.dir/CodeDictionary.cpp.o CMakeFiles/_.dir/BinaryWriter.cpp.o  -o _ 

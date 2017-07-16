@@ -6,6 +6,7 @@
 #include "MinHeap.hpp"
 #include "CodeTree.hpp"
 #include "CodeDictionary.hpp"
+#include "BinaryWriter.hpp"
 
 using namespace std;
 
@@ -43,13 +44,13 @@ vector<Node*> parser(string name) {
 
 void bin_reader(string name) {
 
-    fstream fin(name, ios::in | ios::out | ios::binary);
+    fstream fin(name, ios::in | ios::out | ios::binary | ios::ate);
 
     if (!fin.is_open()) {
         cout << "File " << name << " doesn't exist!" << endl;
         return;
     }
-    unsigned char byte = 1;
+    unsigned char byte = 0;
     for (int i = 0; i < 8; ++i) {
         byte = byte << 1;
 
@@ -70,12 +71,29 @@ void bin_reader(string name) {
 
 int main() {
 
-    vector<Node*> frequency = parser("simple.txt");
-    MinHeap heap(frequency);
-    CodeTree tree(&heap);
-    CodeDictionary codeDictionary(tree);
-    codeDictionary.printDictionary();
+//    vector<Node*> frequency = parser("simple.txt");
+//    MinHeap heap(frequency);
+//    CodeTree tree(&heap);
+//    CodeDictionary codeDictionary(tree);
+//    codeDictionary.printDictionary();
+//
+//    tree.printTree();
+    short sh = 5;
 
-    tree.printTree();
+    string byte;
+    BinaryWriter bw("binary.txt");
+
+    bw.writeBit(1);
+    bw.writeBit(1);
+    bw.writeBit(0);
+    bw.writeBit(1);
+
+    bw.writeBit(1);
+    bw.writeBit(0);
+    bw.writeBit(1);
+    bw.writeBit(1);
+
+    bw.write((char*) &sh, sizeof(sh));
+
     return 0;
 }

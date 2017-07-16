@@ -123,6 +123,33 @@ _/fast:
 	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/build
 .PHONY : _/fast
 
+BinaryWriter.o: BinaryWriter.cpp.o
+
+.PHONY : BinaryWriter.o
+
+# target to build an object file
+BinaryWriter.cpp.o:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/BinaryWriter.cpp.o
+.PHONY : BinaryWriter.cpp.o
+
+BinaryWriter.i: BinaryWriter.cpp.i
+
+.PHONY : BinaryWriter.i
+
+# target to preprocess a source file
+BinaryWriter.cpp.i:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/BinaryWriter.cpp.i
+.PHONY : BinaryWriter.cpp.i
+
+BinaryWriter.s: BinaryWriter.cpp.s
+
+.PHONY : BinaryWriter.s
+
+# target to generate assembly for a file
+BinaryWriter.cpp.s:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/BinaryWriter.cpp.s
+.PHONY : BinaryWriter.cpp.s
+
 CodeDictionary.o: CodeDictionary.cpp.o
 
 .PHONY : CodeDictionary.o
@@ -240,6 +267,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... _"
+	@echo "... BinaryWriter.o"
+	@echo "... BinaryWriter.i"
+	@echo "... BinaryWriter.s"
 	@echo "... CodeDictionary.o"
 	@echo "... CodeDictionary.i"
 	@echo "... CodeDictionary.s"

@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/BinaryWriter.cpp">
+			<Option target="_"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/BinaryWriter.hpp">
+			<Option target="_"/>
+		</Unit>
 		<Unit filename="/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/CodeDictionary.cpp">
 			<Option target="_"/>
 		</Unit>
