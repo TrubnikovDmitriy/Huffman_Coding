@@ -50,6 +50,20 @@ iostream
 Utils.hpp
 /home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/Utils.hpp
 
+/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/Parser.cpp
+iostream
+-
+Parser.hpp
+/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/Parser.hpp
+
+/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/Parser.hpp
+fstream
+-
+vector
+-
+Utils.hpp
+/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/Utils.hpp
+
 /home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/Utils.hpp
 map
 -
@@ -73,4 +87,6 @@ CodeDictionary.hpp
 /home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/CodeDictionary.hpp
 BinaryWriter.hpp
 /home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/BinaryWriter.hpp
+Parser.hpp
+/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/Parser.hpp
 

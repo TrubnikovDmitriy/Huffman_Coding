@@ -20,10 +20,15 @@ CMakeFiles/_.dir/MinHeap.cpp.o: ../MinHeap.cpp
 CMakeFiles/_.dir/MinHeap.cpp.o: ../MinHeap.hpp
 CMakeFiles/_.dir/MinHeap.cpp.o: ../Utils.hpp
 
+CMakeFiles/_.dir/Parser.cpp.o: ../Parser.cpp
+CMakeFiles/_.dir/Parser.cpp.o: ../Parser.hpp
+CMakeFiles/_.dir/Parser.cpp.o: ../Utils.hpp
+
 CMakeFiles/_.dir/main.cpp.o: ../BinaryWriter.hpp
 CMakeFiles/_.dir/main.cpp.o: ../CodeDictionary.hpp
 CMakeFiles/_.dir/main.cpp.o: ../CodeTree.hpp
 CMakeFiles/_.dir/main.cpp.o: ../MinHeap.hpp
+CMakeFiles/_.dir/main.cpp.o: ../Parser.hpp
 CMakeFiles/_.dir/main.cpp.o: ../Utils.hpp
 CMakeFiles/_.dir/main.cpp.o: ../main.cpp
 
