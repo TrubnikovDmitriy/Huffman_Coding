@@ -1,10 +1,6 @@
-//
-// Created by dmitriy on 13.07.17.
-//
-
 #include "CodeTree.hpp"
+#include "Utils.hpp"
 
-#define UNION_SYMBOLS 0
 
 
 CodeTree::CodeTree(MinHeap *minHeap) {
@@ -66,8 +62,12 @@ void CodeTree::printTree(Node* node, int depth) {
     for (int i = 0; i < depth; ++i) {
         std::cout << "\t";
     }
-    std::cout << node->amount << std::endl;
+    std::cout << node->amount << "(" << (char)node->ch << ")" << std::endl;
 
     if (node->left != nullptr)
         printTree(node->left, depth);
+}
+
+Node* CodeTree::getRoot() {
+    return root;
 }

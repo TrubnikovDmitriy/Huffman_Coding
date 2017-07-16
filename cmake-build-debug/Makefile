@@ -123,6 +123,33 @@ _/fast:
 	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/build
 .PHONY : _/fast
 
+CodeDictionary.o: CodeDictionary.cpp.o
+
+.PHONY : CodeDictionary.o
+
+# target to build an object file
+CodeDictionary.cpp.o:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/CodeDictionary.cpp.o
+.PHONY : CodeDictionary.cpp.o
+
+CodeDictionary.i: CodeDictionary.cpp.i
+
+.PHONY : CodeDictionary.i
+
+# target to preprocess a source file
+CodeDictionary.cpp.i:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/CodeDictionary.cpp.i
+.PHONY : CodeDictionary.cpp.i
+
+CodeDictionary.s: CodeDictionary.cpp.s
+
+.PHONY : CodeDictionary.s
+
+# target to generate assembly for a file
+CodeDictionary.cpp.s:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/CodeDictionary.cpp.s
+.PHONY : CodeDictionary.cpp.s
+
 CodeTree.o: CodeTree.cpp.o
 
 .PHONY : CodeTree.o
@@ -213,6 +240,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... _"
+	@echo "... CodeDictionary.o"
+	@echo "... CodeDictionary.i"
+	@echo "... CodeDictionary.s"
 	@echo "... CodeTree.o"
 	@echo "... CodeTree.i"
 	@echo "... CodeTree.s"

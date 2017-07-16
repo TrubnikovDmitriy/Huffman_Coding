@@ -1,8 +1,3 @@
-//
-// Created by dmitriy on 12.07.17.
-//
-
-
 #include "MinHeap.hpp"
 
 

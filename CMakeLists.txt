@@ -3,5 +3,5 @@ project(_)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.cpp MinHeap.hpp MinHeap.cpp CodeTree.hpp CodeTree.cpp)
+set(SOURCE_FILES main.cpp MinHeap.hpp MinHeap.cpp CodeTree.hpp CodeTree.cpp CodeDictionary.hpp Utils.hpp CodeDictionary.cpp)
 add_executable(_ ${SOURCE_FILES})

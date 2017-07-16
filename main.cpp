@@ -5,33 +5,33 @@
 
 #include "MinHeap.hpp"
 #include "CodeTree.hpp"
+#include "CodeDictionary.hpp"
 
 using namespace std;
 
 
 vector<Node*> parser(string name) {
 
-    vector<Node*> frequency;
+    vector<Node *> frequency;
 
-    ifstream fin(name);
+    ifstream fin(name, ios::in);
     if (!fin.is_open()) {
         cout << "File " << name << " doesn't exist!" << endl;
         return frequency;
     }
 
     map<u_short, uint64_t> freq_char;
-    u_short ch = (u_short)fin.get();
+    u_short ch = (u_short) fin.get();
     pair<map<u_short, uint64_t>::iterator, bool> is_new;
 
-    while(!fin.eof()) {
+    while (!fin.eof()) {
 
         // Считываем по одному символу и пытаемся добавить в словарь,
         // если ключ (буква) уже существует, то инкрементируем значение.
-
-        is_new = freq_char.insert( pair<u_short, uint64_t>(ch, 1) );
+        is_new = freq_char.insert(pair<u_short, uint64_t>(ch, 1));
         if (!is_new.second)
             ++freq_char[ch];
-        ch = (u_short)fin.get();
+        ch = (u_short) fin.get();
     }
     fin.close();
 
@@ -41,24 +41,41 @@ vector<Node*> parser(string name) {
     return frequency;
 }
 
-int main() {
-//    std::cout << "Hello, World!" << std::endl;
-//    srand((u_int)time(0));
-//
-//    const int N = 5;
-//    vector<Node*> nodes;
-//
-//    for (int i = 0; i < N; ++i) {
-//        int t = rand() % 100;
-//        cout <<  t << endl;
-//        nodes.push_back(new Node((uint64_t)t));
-//    }
-//    MinHeap heap(nodes);
-//    cout << endl;
-//
-//    CodeTree tree(&heap);
-//    tree.printTree();
+void bin_reader(string name) {
 
-    vector<Node*> frequency = parser("test.txt");
+    fstream fin(name, ios::in | ios::out | ios::binary);
+
+    if (!fin.is_open()) {
+        cout << "File " << name << " doesn't exist!" << endl;
+        return;
+    }
+    unsigned char byte = 1;
+    for (int i = 0; i < 8; ++i) {
+        byte = byte << 1;
+
+        if (i % 2) {
+            cout << "1";
+            byte |= 1;
+        }
+        else {
+            cout << "0";
+        }
+
+    }
+
+    fin.write((char*) &byte, sizeof(byte));
+
+    fin.close();
+}
+
+int main() {
+
+    vector<Node*> frequency = parser("simple.txt");
+    MinHeap heap(frequency);
+    CodeTree tree(&heap);
+    CodeDictionary codeDictionary(tree);
+    codeDictionary.printDictionary();
+
+    tree.printTree();
     return 0;
 }

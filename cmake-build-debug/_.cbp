@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/CodeDictionary.cpp">
+			<Option target="_"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/CodeDictionary.hpp">
+			<Option target="_"/>
+		</Unit>
 		<Unit filename="/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/CodeTree.cpp">
 			<Option target="_"/>
 		</Unit>
@@ -94,6 +100,9 @@
 			<Option target="_"/>
 		</Unit>
 		<Unit filename="/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/MinHeap.hpp">
+			<Option target="_"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/Utils.hpp">
 			<Option target="_"/>
 		</Unit>
 		<Unit filename="/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/main.cpp">

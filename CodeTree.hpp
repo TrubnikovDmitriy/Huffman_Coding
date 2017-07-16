@@ -1,7 +1,3 @@
-//
-// Created by dmitriy on 13.07.17.
-//
-
 #ifndef CODETREE_HPP
 #define CODETREE_HPP
 
@@ -11,6 +7,7 @@ class CodeTree {
 public:
     CodeTree(MinHeap* minHeap);
     ~CodeTree();
+    Node* getRoot();
 
     void printTree();
 
