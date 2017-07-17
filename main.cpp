@@ -1,17 +1,9 @@
 #include "Encode.hpp"
 
-
-
-using namespace std;
-
-
 int main() {
 
-    string filename("simple.txt");
-
-    Encode* code = new Encode(filename);
-    code->encode("binary.txt");
+    Encode* code = new Encode("Encode.cpp");
+    code->encode("binary");
 
     delete code;
     return 0;
-}

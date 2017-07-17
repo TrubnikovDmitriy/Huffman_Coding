@@ -43,15 +43,22 @@ void Encode::encode(string compressed_name) {
     u_short uselessBits = (u_short)((headerInfo / 8 + 1) * 8 - headerInfo);
 
     // Создаем кастомный бинарный райтер
-    BinaryWriter* bw = new BinaryWriter(compressed_name);
+    BinaryWriter* bw = new BinaryWriter(compressed_name + ".dtv");
 
     // В первые 2+2 байта помещаем заголовочную информацию
     bw->write((char*)&lists, sizeof(u_short));          // Количество листьев
     bw->write((char*)&uselessBits, sizeof(u_short));    // Количество "пустых" бит в конце дерева
     // Далее записываем дерево для декодирования
     writeNode(bw, tree->getRoot());
+
     // Осталось лишь записать сжатый текст
-    // TODO
+    parser->reopen(original_file);
+    u_short ch;
+    while(!parser->eof()) {
+        ch = parser->getSymbol();
+        bw->writeBitSet(codeDictionary->operator[](ch));
+    }
+
     delete bw;
 }
 

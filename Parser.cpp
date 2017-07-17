@@ -12,28 +12,14 @@ Parser::~Parser() {
     fin.close();
 }
 
-bool Parser::reopen(string filename) {
-
-    fin.close();
-    fin.open(filename, ios::in);
-
-    if (!fin.is_open()) {
-        cout << "File " << filename << " doesn't exist!" << endl;
-        return false;
-    }
-    return true;
-}
-void Parser::close() {
-    fin.close();
-}
-vector<Node*> Parser::parseOriginal(string original_file) {
+vector<Node*> Parser::parseOriginal(string original) {
 
     fin.close();
     vector<Node*> frequency;
 
-    fin.open(original_file, ios::in);
+    fin.open(original, ios::in);
     if (!fin.is_open()) {
-        cout << "File " << original_file << " doesn't exist!" << endl;
+        cout << "File " << original << " doesn't exist!" << endl;
         return frequency;
     }
 
@@ -57,4 +43,26 @@ vector<Node*> Parser::parseOriginal(string original_file) {
         frequency.push_back(new Node(i->first, i->second));
 
     return frequency;
+}
+bool Parser::reopen(string filename) {
+
+    fin.close();
+    fin.open(filename, ios::in);
+
+    if (!fin.is_open()) {
+        cout << "File " << filename << " doesn't exist!" << endl;
+        return false;
+    }
+    return true;
+}
+u_short Parser::getSymbol() {
+
+    assert(fin.is_open());
+    return (u_short)fin.get();
+}
+void Parser::close() {
+    fin.close();
+}
+bool Parser::eof() {
+    return fin.eof();
 }

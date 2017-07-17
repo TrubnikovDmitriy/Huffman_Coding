@@ -13,9 +13,11 @@ public:
     Parser(string filename);
     ~Parser();
 
+    vector<Node*> parseOriginal(string original);
     bool reopen(string filename);
+    u_short getSymbol();
     void close();
-    vector<Node*> parseOriginal(string original_file);
+    bool eof();
 private:
     ifstream fin;
 };
