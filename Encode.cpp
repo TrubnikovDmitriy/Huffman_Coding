@@ -39,15 +39,13 @@ void Encode::encode(string compressed_name) {
     // Обсчитываем древо, чтобы узнать сколько места отводить
     // под заголовочную информацию в сжатом файле
     countTreeSize(tree->getRoot());
-    int headerInfo = (lists * (8 + 1) + nodes);
-    u_short uselessBits = (u_short)((headerInfo / 8 + 1) * 8 - headerInfo);
 
     // Создаем кастомный бинарный райтер
     BinaryWriter* bw = new BinaryWriter(compressed_name + ".dtv");
 
     // В первые 2+2 байта помещаем заголовочную информацию
-    bw->write((char*)&lists, sizeof(u_short));          // Количество листьев
-    bw->write((char*)&uselessBits, sizeof(u_short));    // Количество "пустых" бит в конце дерева
+    bw->write((char*)&lists, sizeof(u_short));  // Количество листьев
+    bw->write((char*)&nodes, sizeof(u_short));  // Количество нод
     // Далее записываем дерево для декодирования
     writeNode(bw, tree->getRoot());
 
