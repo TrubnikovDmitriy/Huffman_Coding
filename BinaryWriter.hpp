@@ -11,7 +11,8 @@ public:
     BinaryWriter(string file_name);
     ~BinaryWriter();
 
-    void writeByte(string byte);
+    void writeBitSet(string byte);
+    void writeByte(u_short byte);
     void writeBit(u_short bit);
     void write(char* value, size_t size);
     void flushBuffer();

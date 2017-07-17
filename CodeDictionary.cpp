@@ -2,10 +2,10 @@
 
 using namespace std;
 
-CodeDictionary::CodeDictionary(CodeTree &tree, int size): max_symbols(size) {
+CodeDictionary::CodeDictionary(CodeTree* tree, int size): max_symbols(size) {
 
     bits = new char[max_symbols];
-    createKey(tree.getRoot(), 0);
+    createKey(tree->getRoot(), 0);
 }
 CodeDictionary::~CodeDictionary() {
     delete[] bits;
@@ -46,4 +46,7 @@ void CodeDictionary::printDictionary() {
     for (auto i = dictionary.begin(); i != dictionary.end(); ++i) {
         cout << (char)i->first << "(" << i->second << ")" << endl;
     }
+}
+std::string CodeDictionary::operator[](const unsigned short &sh) {
+    return dictionary[sh];
 }

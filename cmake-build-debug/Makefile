@@ -204,6 +204,33 @@ CodeTree.cpp.s:
 	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/CodeTree.cpp.s
 .PHONY : CodeTree.cpp.s
 
+Encode.o: Encode.cpp.o
+
+.PHONY : Encode.o
+
+# target to build an object file
+Encode.cpp.o:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/Encode.cpp.o
+.PHONY : Encode.cpp.o
+
+Encode.i: Encode.cpp.i
+
+.PHONY : Encode.i
+
+# target to preprocess a source file
+Encode.cpp.i:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/Encode.cpp.i
+.PHONY : Encode.cpp.i
+
+Encode.s: Encode.cpp.s
+
+.PHONY : Encode.s
+
+# target to generate assembly for a file
+Encode.cpp.s:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/Encode.cpp.s
+.PHONY : Encode.cpp.s
+
 MinHeap.o: MinHeap.cpp.o
 
 .PHONY : MinHeap.o
@@ -303,6 +330,9 @@ help:
 	@echo "... CodeTree.o"
 	@echo "... CodeTree.i"
 	@echo "... CodeTree.s"
+	@echo "... Encode.o"
+	@echo "... Encode.i"
+	@echo "... Encode.s"
 	@echo "... MinHeap.o"
 	@echo "... MinHeap.i"
 	@echo "... MinHeap.s"

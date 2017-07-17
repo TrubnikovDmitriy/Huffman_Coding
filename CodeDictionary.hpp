@@ -5,10 +5,11 @@
 
 class CodeDictionary {
 public:
-    CodeDictionary(CodeTree& tree, int size = MAX_SYMBOLS);
+    CodeDictionary(CodeTree* tree, int size = MAX_SYMBOLS);
     ~CodeDictionary();
 
     void printDictionary();
+    std::string operator[](const unsigned short &sh);
 
 private:
     void createKey(Node* node, int depth);

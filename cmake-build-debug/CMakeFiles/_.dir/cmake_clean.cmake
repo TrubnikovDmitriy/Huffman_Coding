@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/_.dir/CodeDictionary.cpp.o"
   "CMakeFiles/_.dir/BinaryWriter.cpp.o"
   "CMakeFiles/_.dir/Parser.cpp.o"
+  "CMakeFiles/_.dir/Encode.cpp.o"
   "_.pdb"
   "_"
 )

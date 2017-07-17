@@ -16,7 +16,7 @@ BinaryWriter::~BinaryWriter() {
     fout.close();
 }
 
-void BinaryWriter::writeByte(string byte) {
+void BinaryWriter::writeBitSet(string byte) {
 
     assert(count <= 8);
 
@@ -33,6 +33,27 @@ void BinaryWriter::writeByte(string byte) {
         buffer <<= 1;
         if (byte[i] == '1')
             buffer |= 1;
+        ++count;
+    }
+}
+void BinaryWriter::writeByte(u_short byte) {
+
+    assert(count <= 8);
+
+    for (int i = 0; i < 8; ++i) {
+
+        if (count == 8) {
+            fout.write((char*)&buffer, sizeof(buffer));
+            count = 0;
+            buffer = 0;
+        }
+
+        buffer <<= 1;
+        if (byte & 128)     //       1000 0000 = 128
+            buffer |= 1;    //     * ?xxx xxxx
+        byte <<= 1;         // ---------------
+                            //       ?000 0000
+
         ++count;
     }
 }
