@@ -3,13 +3,14 @@
 
 #include "CodeTree.hpp"
 
-class CodeDictionary {
+class EncodeDictionary {
 public:
-    CodeDictionary(CodeTree* tree, int size = MAX_SYMBOLS);
-    ~CodeDictionary();
+    EncodeDictionary(CodeTree* tree, int size = MAX_SYMBOLS);
+    ~EncodeDictionary();
 
     void printDictionary();
-    std::string operator[](const unsigned short &sh);
+    std::string operator[](const u_short &sh);
+    u_short operator[](const std::string &str);
 
 private:
     void createKey(Node* node, int depth);

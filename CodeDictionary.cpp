@@ -1,17 +1,17 @@
-#include "CodeDictionary.hpp"
+#include "EncodeDictionary.hpp"
 
 using namespace std;
 
-CodeDictionary::CodeDictionary(CodeTree* tree, int size): max_symbols(size) {
+EncodeDictionary::EncodeDictionary(CodeTree* tree, int size): max_symbols(size) {
 
     bits = new char[max_symbols];
     createKey(tree->getRoot(), 0);
 }
-CodeDictionary::~CodeDictionary() {
+EncodeDictionary::~EncodeDictionary() {
     delete[] bits;
 }
 
-void CodeDictionary::createKey(Node* node, int depth) {
+void EncodeDictionary::createKey(Node* node, int depth) {
 
     assert(depth < max_symbols);
 
@@ -42,11 +42,11 @@ void CodeDictionary::createKey(Node* node, int depth) {
 
 }
 
-void CodeDictionary::printDictionary() {
+void EncodeDictionary::printDictionary() {
     for (auto i = dictionary.begin(); i != dictionary.end(); ++i) {
         cout << (char)i->first << "(" << i->second << ")" << endl;
     }
 }
-std::string CodeDictionary::operator[](const unsigned short &sh) {
+std::string EncodeDictionary::operator[](const unsigned short &sh) {
     return dictionary[sh];
 }

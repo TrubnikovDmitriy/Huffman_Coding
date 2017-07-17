@@ -2,14 +2,17 @@
 #define CODETREE_HPP
 
 #include "MinHeap.hpp"
+#include "BinaryReader.hpp"
 
-class CodeTree {
+class EncodeTree {
 public:
-    CodeTree(MinHeap* minHeap);
-    ~CodeTree();
-    Node* getRoot();
+    EncodeTree();
+    ~EncodeTree();
 
+    void makeEncodeTree(MinHeap* minHeap);
+    void makeDecodeTree(BinaryReader* br);
     void printTree();
+    Node* getRoot();
 
 private:
     Node* makeBranch(Node* left, Node* right);

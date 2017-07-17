@@ -1,9 +1,16 @@
-#include "CodeTree.hpp"
+#include "EncodeTree.hpp"
 #include "Utils.hpp"
 
 
 
-CodeTree::CodeTree(MinHeap *minHeap) {
+EncodeTree::EncodeTree() {
+    root = nullptr;
+}
+EncodeTree::~EncodeTree() {
+    deleteNode(root);
+}
+
+void EncodeTree::makeEncodeTree(MinHeap *minHeap) {
 
     // Построение дерева кодирования
     Node* temp1 = minHeap->getMin();
@@ -21,18 +28,16 @@ CodeTree::CodeTree(MinHeap *minHeap) {
     }
     root = temp1;
 }
-CodeTree::~CodeTree() {
-    deleteNode(root);
-}
 
-Node* CodeTree::makeBranch(Node *left, Node *right) {
+
+Node* EncodeTree::makeBranch(Node *left, Node *right) {
 
     Node* parent = new Node(UNION_SYMBOLS, left->amount + right->amount);
     parent->left = left;
     parent->right = right;
     return parent;
 }
-void CodeTree::deleteNode(Node *node) {
+void EncodeTree::deleteNode(Node *node) {
 
     if (node->left != nullptr)
         deleteNode(node->left);
@@ -41,7 +46,7 @@ void CodeTree::deleteNode(Node *node) {
     delete node;
 }
 
-void CodeTree::printTree() {
+void EncodeTree::printTree() {
 
     int depth = 0;
 
@@ -53,7 +58,7 @@ void CodeTree::printTree() {
     if (root->left != nullptr)
         printTree(root->left, depth);
 }
-void CodeTree::printTree(Node* node, int depth) {
+void EncodeTree::printTree(Node* node, int depth) {
     ++depth;
 
     if (node->right != nullptr)
@@ -68,6 +73,6 @@ void CodeTree::printTree(Node* node, int depth) {
         printTree(node->left, depth);
 }
 
-Node* CodeTree::getRoot() {
+Node* EncodeTree::getRoot() {
     return root;
 }

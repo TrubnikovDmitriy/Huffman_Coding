@@ -9,17 +9,20 @@ CMakeFiles/_.dir/BinaryWriter.cpp.o: ../BinaryWriter.cpp
 CMakeFiles/_.dir/BinaryWriter.cpp.o: ../BinaryWriter.hpp
 CMakeFiles/_.dir/BinaryWriter.cpp.o: ../Utils.hpp
 
+CMakeFiles/_.dir/CodeDictionary.cpp.o: ../BinaryReader.hpp
 CMakeFiles/_.dir/CodeDictionary.cpp.o: ../CodeDictionary.cpp
 CMakeFiles/_.dir/CodeDictionary.cpp.o: ../CodeDictionary.hpp
 CMakeFiles/_.dir/CodeDictionary.cpp.o: ../CodeTree.hpp
 CMakeFiles/_.dir/CodeDictionary.cpp.o: ../MinHeap.hpp
 CMakeFiles/_.dir/CodeDictionary.cpp.o: ../Utils.hpp
 
+CMakeFiles/_.dir/CodeTree.cpp.o: ../BinaryReader.hpp
 CMakeFiles/_.dir/CodeTree.cpp.o: ../CodeTree.cpp
 CMakeFiles/_.dir/CodeTree.cpp.o: ../CodeTree.hpp
 CMakeFiles/_.dir/CodeTree.cpp.o: ../MinHeap.hpp
 CMakeFiles/_.dir/CodeTree.cpp.o: ../Utils.hpp
 
+CMakeFiles/_.dir/Encode.cpp.o: ../BinaryReader.hpp
 CMakeFiles/_.dir/Encode.cpp.o: ../BinaryWriter.hpp
 CMakeFiles/_.dir/Encode.cpp.o: ../CodeDictionary.hpp
 CMakeFiles/_.dir/Encode.cpp.o: ../CodeTree.hpp

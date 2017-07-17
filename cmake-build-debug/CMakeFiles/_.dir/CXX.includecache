@@ -39,6 +39,8 @@ CodeTree.hpp
 /home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/CodeTree.hpp
 
 /home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/CodeTree.cpp
+stack
+-
 CodeTree.hpp
 /home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/CodeTree.hpp
 Utils.hpp
@@ -47,6 +49,8 @@ Utils.hpp
 /home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/CodeTree.hpp
 MinHeap.hpp
 /home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/MinHeap.hpp
+BinaryReader.hpp
+/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/BinaryReader.hpp
 
 /home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/Encode.cpp
 Encode.hpp
@@ -107,8 +111,4 @@ cassert
 /home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/main.cpp
 Encode.hpp
 /home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/Encode.hpp
-BinaryReader.hpp
-/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/BinaryReader.hpp
-BinaryWriter.hpp
-/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/BinaryWriter.hpp
 
