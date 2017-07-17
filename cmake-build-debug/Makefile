@@ -123,6 +123,33 @@ _/fast:
 	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/build
 .PHONY : _/fast
 
+BinaryReader.o: BinaryReader.cpp.o
+
+.PHONY : BinaryReader.o
+
+# target to build an object file
+BinaryReader.cpp.o:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/BinaryReader.cpp.o
+.PHONY : BinaryReader.cpp.o
+
+BinaryReader.i: BinaryReader.cpp.i
+
+.PHONY : BinaryReader.i
+
+# target to preprocess a source file
+BinaryReader.cpp.i:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/BinaryReader.cpp.i
+.PHONY : BinaryReader.cpp.i
+
+BinaryReader.s: BinaryReader.cpp.s
+
+.PHONY : BinaryReader.s
+
+# target to generate assembly for a file
+BinaryReader.cpp.s:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/BinaryReader.cpp.s
+.PHONY : BinaryReader.cpp.s
+
 BinaryWriter.o: BinaryWriter.cpp.o
 
 .PHONY : BinaryWriter.o
@@ -321,6 +348,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... _"
+	@echo "... BinaryReader.o"
+	@echo "... BinaryReader.i"
+	@echo "... BinaryReader.s"
 	@echo "... BinaryWriter.o"
 	@echo "... BinaryWriter.i"
 	@echo "... BinaryWriter.s"

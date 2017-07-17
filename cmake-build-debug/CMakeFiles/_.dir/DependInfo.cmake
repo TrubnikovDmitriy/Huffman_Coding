@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/BinaryReader.cpp" "/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/cmake-build-debug/CMakeFiles/_.dir/BinaryReader.cpp.o"
   "/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/BinaryWriter.cpp" "/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/cmake-build-debug/CMakeFiles/_.dir/BinaryWriter.cpp.o"
   "/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/CodeDictionary.cpp" "/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/cmake-build-debug/CMakeFiles/_.dir/CodeDictionary.cpp.o"
   "/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/CodeTree.cpp" "/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/cmake-build-debug/CMakeFiles/_.dir/CodeTree.cpp.o"
