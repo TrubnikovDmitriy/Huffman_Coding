@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/_.dir/Parser.cpp.o"
   "CMakeFiles/_.dir/Encode.cpp.o"
   "CMakeFiles/_.dir/BinaryReader.cpp.o"
+  "CMakeFiles/_.dir/Decode.cpp.o"
   "_.pdb"
   "_"
 )

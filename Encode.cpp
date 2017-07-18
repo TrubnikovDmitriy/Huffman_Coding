@@ -21,9 +21,9 @@ Encode::Encode(string original_name): original_file(original_name),
     delete heap;
 
     // (3)
-    codeDictionary = new CodeDictionary<u_short, string>();
-    codeDictionary->makeDictionary(tree);
-    codeDictionary->printDictionary();
+    encodeDictionary = new CodeDictionary<u_short, string>();
+    encodeDictionary->makeDictionary(tree);
+//    encodeDictionary->printDictionary();
 
 // На выходе имеем парсер для файла(1), дерево кодирования(2) и словарь(3) для удобства кодирования
 }
@@ -31,7 +31,7 @@ Encode::~Encode() {
 
     delete parser;
     delete tree;
-    delete codeDictionary;
+    delete encodeDictionary;
 }
 
 void Encode::encode(string compressed_name) {
@@ -54,7 +54,7 @@ void Encode::encode(string compressed_name) {
     u_short ch;
     while(!parser->eof()) {
         ch = parser->getSymbol();
-        bw->writeBitSet(codeDictionary->operator[](ch));
+        bw->writeBitSet(encodeDictionary->operator[](ch));
     }
 
     delete bw;

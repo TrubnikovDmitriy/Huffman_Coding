@@ -25,7 +25,7 @@ private:
     Parser* parser;
     CodeTree* tree;
     const string original_file;
-    CodeDictionary<u_short, string>* codeDictionary;
+    CodeDictionary<u_short, string>* encodeDictionary;
 
     unsigned short lists;
     unsigned short nodes;

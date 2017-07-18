@@ -108,6 +108,12 @@
 		<Unit filename="/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/CodeTree.hpp">
 			<Option target="_"/>
 		</Unit>
+		<Unit filename="/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/Decode.cpp">
+			<Option target="_"/>
+		</Unit>
+		<Unit filename="/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/Decode.hpp">
+			<Option target="_"/>
+		</Unit>
 		<Unit filename="/home/dmitriy/TPark/1 Семестр/Algorithm/3 модуль. Деревья  /Код Хаффмана/Encode.cpp">
 			<Option target="_"/>
 		</Unit>

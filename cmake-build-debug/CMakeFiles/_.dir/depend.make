@@ -22,6 +22,15 @@ CMakeFiles/_.dir/CodeTree.cpp.o: ../CodeTree.hpp
 CMakeFiles/_.dir/CodeTree.cpp.o: ../MinHeap.hpp
 CMakeFiles/_.dir/CodeTree.cpp.o: ../Utils.hpp
 
+CMakeFiles/_.dir/Decode.cpp.o: ../BinaryReader.hpp
+CMakeFiles/_.dir/Decode.cpp.o: ../CodeDictionary.hpp
+CMakeFiles/_.dir/Decode.cpp.o: ../CodeTree.hpp
+CMakeFiles/_.dir/Decode.cpp.o: ../Decode.cpp
+CMakeFiles/_.dir/Decode.cpp.o: ../Decode.hpp
+CMakeFiles/_.dir/Decode.cpp.o: ../MinHeap.hpp
+CMakeFiles/_.dir/Decode.cpp.o: ../Parser.hpp
+CMakeFiles/_.dir/Decode.cpp.o: ../Utils.hpp
+
 CMakeFiles/_.dir/Encode.cpp.o: ../BinaryReader.hpp
 CMakeFiles/_.dir/Encode.cpp.o: ../BinaryWriter.hpp
 CMakeFiles/_.dir/Encode.cpp.o: ../CodeDictionary.hpp
@@ -44,6 +53,7 @@ CMakeFiles/_.dir/main.cpp.o: ../BinaryReader.hpp
 CMakeFiles/_.dir/main.cpp.o: ../BinaryWriter.hpp
 CMakeFiles/_.dir/main.cpp.o: ../CodeDictionary.hpp
 CMakeFiles/_.dir/main.cpp.o: ../CodeTree.hpp
+CMakeFiles/_.dir/main.cpp.o: ../Decode.hpp
 CMakeFiles/_.dir/main.cpp.o: ../Encode.hpp
 CMakeFiles/_.dir/main.cpp.o: ../MinHeap.hpp
 CMakeFiles/_.dir/main.cpp.o: ../Parser.hpp

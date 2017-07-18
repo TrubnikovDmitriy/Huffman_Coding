@@ -3,8 +3,6 @@
 
 #include "CodeTree.hpp"
 
-// TODO шаблоны и специализировать необходимые шаблоны
-
 template <typename key, typename value>
 class CodeDictionary {
 public:
@@ -22,8 +20,6 @@ private:
     const int max_symbols;
     char* bits;
 };
-#endif //CODEDICTIONARY_HPP
-
 
 template <typename key, typename value>
 CodeDictionary<key, value>::CodeDictionary(int size): max_symbols(size) {
@@ -43,3 +39,5 @@ template <typename key, typename value>
 value CodeDictionary<key, value>::operator[](const key &str) {
     return dictionary[str];
 }
+
+#endif //CODEDICTIONARY_HPP

@@ -20,5 +20,5 @@ set(SOURCE_FILES
         Encode.cpp
         BinaryReader.hpp
         BinaryReader.cpp
-)
+        Decode.hpp Decode.cpp)
 add_executable(_ ${SOURCE_FILES})
