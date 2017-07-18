@@ -4,13 +4,13 @@
 #include "MinHeap.hpp"
 #include "BinaryReader.hpp"
 
-class EncodeTree {
+class CodeTree {
 public:
-    EncodeTree();
-    ~EncodeTree();
+    CodeTree();
+    ~CodeTree();
 
-    void makeEncodeTree(MinHeap* minHeap);
-    void makeDecodeTree(BinaryReader* br);
+    void makeTree(MinHeap *minHeap);
+    void makeTree(BinaryReader *br);
     void printTree();
     Node* getRoot();
 

@@ -1,7 +1,7 @@
 #include "BinaryWriter.hpp"
 #include "Utils.hpp"
 
-BinaryWriter::BinaryWriter(string file_name) {
+BinaryWriter::BinaryWriter(const string file_name) {
 
     fout.open(file_name, ios_base::out| ios_base::trunc | ios::binary);
     if (!fout.is_open())

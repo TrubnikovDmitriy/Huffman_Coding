@@ -3,21 +3,43 @@
 
 #include "CodeTree.hpp"
 
-class EncodeDictionary {
-public:
-    EncodeDictionary(CodeTree* tree, int size = MAX_SYMBOLS);
-    ~EncodeDictionary();
+// TODO шаблоны и специализировать необходимые шаблоны
 
+template <typename key, typename value>
+class CodeDictionary {
+public:
+    CodeDictionary(int size = MAX_SYMBOLS);
+    ~CodeDictionary();
+
+    void makeDictionary(CodeTree* tree);
+    value operator[](const key &k);
     void printDictionary();
-    std::string operator[](const u_short &sh);
-    u_short operator[](const std::string &str);
 
 private:
     void createKey(Node* node, int depth);
 
-    dic_map dictionary;
+    std::map<key, value> dictionary;
     const int max_symbols;
     char* bits;
 };
-
 #endif //CODEDICTIONARY_HPP
+
+
+template <typename key, typename value>
+CodeDictionary<key, value>::CodeDictionary(int size): max_symbols(size) {
+    bits = new char[max_symbols];
+}
+template <typename key, typename value>
+CodeDictionary<key, value>::~CodeDictionary() {
+    delete[] bits;
+}
+
+template <typename key, typename value>
+void CodeDictionary<key, value>::makeDictionary(CodeTree *tree) {
+    createKey(tree->getRoot(), 0);
+}
+
+template <typename key, typename value>
+value CodeDictionary<key, value>::operator[](const key &str) {
+    return dictionary[str];
+}

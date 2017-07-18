@@ -1,16 +1,16 @@
-#include "EncodeTree.hpp"
+#include <stack>
+#include "CodeTree.hpp"
 #include "Utils.hpp"
 
 
-
-EncodeTree::EncodeTree() {
+CodeTree::CodeTree() {
     root = nullptr;
 }
-EncodeTree::~EncodeTree() {
+CodeTree::~CodeTree() {
     deleteNode(root);
 }
 
-void EncodeTree::makeEncodeTree(MinHeap *minHeap) {
+void CodeTree::makeTree(MinHeap *minHeap) {
 
     // Построение дерева кодирования
     Node* temp1 = minHeap->getMin();
@@ -28,16 +28,59 @@ void EncodeTree::makeEncodeTree(MinHeap *minHeap) {
     }
     root = temp1;
 }
+void CodeTree::makeTree(BinaryReader *br) {
+    // Заранее оговорено, что структура закодированного файла будет следующей:
+    //    - первые 2 байта - количетсво нод
+    //    - следующие 2 байта - количество узлов
+    //    - дерево кодирования, сложенное по определенном алгоритму
+    //    - сразу за деревом, закодированный текст.
+
+    u_short lists, nodes;
+    br->read((char*)&lists, sizeof(u_short));
+    br->read((char*)&nodes, sizeof(u_short));
+
+    std::stack<Node*> stack;
+
+    u_short count_lists = 0;
+    u_short count_nodes = 0;
+    Node *right, *left;
+    u_short ch;
+    int flag;
+
+    while(count_nodes < nodes || count_lists < lists) {
+        flag = br->readBit();
+        if (flag == 1) {
+            ++count_lists;
+
+            ch = br->readByte();
+            stack.push(new Node(ch, 0));
+        }
+        if (flag == 0) {
+            ++count_nodes;
+
+            right = stack.top();
+            stack.pop();
+            left = stack.top();
+            stack.pop();
+            Node* new_node = new Node();
+            new_node->right = right;
+            new_node->left = left;
+            stack.push(new_node);
+        }
+    }
+    assert(stack.size() == 1);
+    root = stack.top();
+}
 
 
-Node* EncodeTree::makeBranch(Node *left, Node *right) {
+Node* CodeTree::makeBranch(Node *left, Node *right) {
 
     Node* parent = new Node(UNION_SYMBOLS, left->amount + right->amount);
     parent->left = left;
     parent->right = right;
     return parent;
 }
-void EncodeTree::deleteNode(Node *node) {
+void CodeTree::deleteNode(Node *node) {
 
     if (node->left != nullptr)
         deleteNode(node->left);
@@ -46,7 +89,7 @@ void EncodeTree::deleteNode(Node *node) {
     delete node;
 }
 
-void EncodeTree::printTree() {
+void CodeTree::printTree() {
 
     int depth = 0;
 
@@ -58,7 +101,7 @@ void EncodeTree::printTree() {
     if (root->left != nullptr)
         printTree(root->left, depth);
 }
-void EncodeTree::printTree(Node* node, int depth) {
+void CodeTree::printTree(Node* node, int depth) {
     ++depth;
 
     if (node->right != nullptr)
@@ -73,6 +116,6 @@ void EncodeTree::printTree(Node* node, int depth) {
         printTree(node->left, depth);
 }
 
-Node* EncodeTree::getRoot() {
+Node* CodeTree::getRoot() {
     return root;
 }

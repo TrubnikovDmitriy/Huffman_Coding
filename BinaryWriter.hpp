@@ -8,7 +8,7 @@ using namespace std;
 
 class BinaryWriter {
 public:
-    BinaryWriter(string file_name);
+    BinaryWriter(const string file_name);
     ~BinaryWriter();
 
     void writeBitSet(string byte);

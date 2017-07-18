@@ -8,12 +8,19 @@
 #define UNION_SYMBOLS 0
 
 
-typedef std::map<unsigned short, std::string> dic_map;
+typedef std::map<unsigned short, std::string> encode_dic;
+typedef std::map<std::string, unsigned short> decode_dic;
 
 struct Node {
     Node(u_short _ch, uint64_t _am) {
         ch = _ch;
         amount = _am;
+        left = nullptr;
+        right = nullptr;
+    }
+    Node() {
+        ch = UNION_SYMBOLS;
+        amount = 0;
         left = nullptr;
         right = nullptr;
     }

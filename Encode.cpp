@@ -1,6 +1,4 @@
 #include "Encode.hpp"
-#include <fstream>
-
 
 Encode::Encode(string original_name): original_file(original_name),
                                       lists(0), nodes(0) {
@@ -17,13 +15,15 @@ Encode::Encode(string original_name): original_file(original_name),
 
     // (2)
     MinHeap* heap = new MinHeap(frequency);
-    tree = new CodeTree(heap);
+    tree = new CodeTree();
+    tree->makeTree(heap);
 //    tree->printTree();
     delete heap;
 
     // (3)
-    codeDictionary = new CodeDictionary(tree);
-//    codeDictionary->printDictionary();
+    codeDictionary = new CodeDictionary<u_short, string>();
+    codeDictionary->makeDictionary(tree);
+    codeDictionary->printDictionary();
 
 // На выходе имеем парсер для файла(1), дерево кодирования(2) и словарь(3) для удобства кодирования
 }
