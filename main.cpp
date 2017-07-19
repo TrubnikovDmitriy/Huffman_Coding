@@ -1,7 +1,7 @@
 #include "Encode.hpp"
 #include "Decode.hpp"
 //
-// TODO для оберток заменить указатели на ссылки!!
+
 int main() {
 
     Encode *encode = new Encode("Makefile");
