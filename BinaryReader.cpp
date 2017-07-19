@@ -62,4 +62,5 @@ int BinaryReader::readBit() {
 }
 bool BinaryReader::eof() {
     return fin.eof();
+//    return (fin.eof() && count == 0);
 }

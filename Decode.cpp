@@ -19,7 +19,7 @@ Decode::Decode(string compressed_name): compressed_file(compressed_name) {
 
     // (3)
     decodeDictionary->makeDictionary(tree);
-//    decodeDictionary->printDictionary();
+    decodeDictionary->printDictionary();
 
 // На выходе имеем: ридер(1) для файла, указатель которого находится в начале
 // закодированного текста (заголовочную информацию уже пропарсили),
@@ -49,4 +49,6 @@ void Decode::decode(string decompressed_name) {
     }
 
     fout.close();
+
+    cout << "Файл " << compressed_file << " успешно разархивирован!" << endl;
 }

@@ -41,7 +41,7 @@ void Encode::encode(string compressed_name) {
     countTreeSize(tree->getRoot());
 
     // Создаем кастомный бинарный райтер
-    BinaryWriter* bw = new BinaryWriter(compressed_name + ".dtv");
+    BinaryWriter* bw = new BinaryWriter(compressed_name);
 
     // В первые 2+2 байта помещаем заголовочную информацию
     bw->write((char*)&lists, sizeof(u_short));  // Количество листьев
@@ -58,6 +58,7 @@ void Encode::encode(string compressed_name) {
     }
 
     delete bw;
+    cout << "Файл " << original_file << " успешно заархивирован!" << endl;
 }
 
 void Encode::countTreeSize(Node* node) {

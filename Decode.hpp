@@ -17,9 +17,6 @@ public:
     void decode(string decompressed_name);
 
 private:
-//    void countTreeSize(Node* node);
-//    void writeNode(BinaryWriter* bw, Node* node);
-
     CodeTree* tree;
     BinaryReader* br;
     const string compressed_file;
