@@ -11,26 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="455cc508-6c05-469f-94b5-adcb4a4397c2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/binary" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/binary.dtv" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/_.dir/CodeDictionary.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/_.dir/CodeDictionary.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/_.dir/CodeTree.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/_.dir/CodeTree.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/_.dir/Decode.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/_.dir/Decode.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/_.dir/Encode.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/_.dir/Encode.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/_.dir/main.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/_.dir/main.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/_" afterPath="$PROJECT_DIR$/cmake-build-debug/_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeTree.cpp" afterPath="$PROJECT_DIR$/CodeTree.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeTree.hpp" afterPath="$PROJECT_DIR$/CodeTree.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Decode.cpp" afterPath="$PROJECT_DIR$/Decode.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Decode.hpp" afterPath="$PROJECT_DIR$/Decode.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Encode.cpp" afterPath="$PROJECT_DIR$/Encode.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Encode.hpp" afterPath="$PROJECT_DIR$/Encode.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/2.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/2.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/_.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/_.dir/CXX.includecache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
-    </list>
+    <list default="true" id="455cc508-6c05-469f-94b5-adcb4a4397c2" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -113,33 +94,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Decode.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Decode.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Decode.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+            <state relative-caret-position="318">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
-                <element signature="e#968#1050#0" expanded="false" />
-                <element signature="e#1052#1685#0" expanded="false" />
+                <element signature="e#970#1052#0" expanded="false" />
+                <element signature="e#1054#1687#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CodeTree.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CodeTree.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CodeTree.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="56" column="36" lean-forward="false" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
+            <state relative-caret-position="270">
+              <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding>
                 <element signature="e#64#108#0" expanded="false" />
                 <element signature="e#109#156#0" expanded="false" />
                 <element signature="e#158#592#0" expanded="false" />
-                <element signature="e#1810#2011#0" expanded="false" />
-                <element signature="e#2012#2199#0" expanded="false" />
-                <element signature="e#2201#2438#0" expanded="false" />
-                <element signature="e#2439#2793#0" expanded="false" />
-                <element signature="e#2795#2841#0" expanded="false" />
+                <element signature="e#1761#1962#0" expanded="false" />
+                <element signature="e#1963#2150#0" expanded="false" />
+                <element signature="e#2152#2389#0" expanded="false" />
+                <element signature="e#2390#2744#0" expanded="false" />
+                <element signature="e#2746#2792#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -183,10 +164,10 @@
         <option value="$PROJECT_DIR$/Encode.hpp" />
         <option value="$PROJECT_DIR$/Decode.hpp" />
         <option value="$PROJECT_DIR$/CodeTree.hpp" />
-        <option value="$PROJECT_DIR$/Decode.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/Encode.cpp" />
         <option value="$PROJECT_DIR$/CodeTree.cpp" />
+        <option value="$PROJECT_DIR$/Decode.cpp" />
       </list>
     </option>
   </component>
@@ -442,7 +423,7 @@
       <workItem from="1500338897070" duration="2540000" />
       <workItem from="1500381367567" duration="3659000" />
       <workItem from="1500501884514" duration="868000" />
-      <workItem from="1500503298160" duration="2990000" />
+      <workItem from="1500503298160" duration="3152000" />
     </task>
     <task id="LOCAL-00001" summary="reading">
       <created>1499978441682</created>
@@ -462,11 +443,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83952000" />
+    <option name="totallyTimeSpent" value="84114000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24960877" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -474,9 +455,9 @@
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3513932" sideWeight="0.5031299" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25386998" sideWeight="0.413928" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25386998" sideWeight="0.413928" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24960877" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3513932" sideWeight="0.4968701" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3513932" sideWeight="0.4968701" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34055728" sideWeight="0.4968701" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -601,11 +582,11 @@
             <element signature="e#64#108#0" expanded="false" />
             <element signature="e#109#156#0" expanded="false" />
             <element signature="e#158#592#0" expanded="false" />
-            <element signature="e#593#1807#0" expanded="false" />
-            <element signature="e#1810#2011#0" expanded="false" />
-            <element signature="e#2012#2199#0" expanded="false" />
-            <element signature="e#2439#2793#0" expanded="false" />
-            <element signature="e#2795#2841#0" expanded="false" />
+            <element signature="e#593#1758#0" expanded="false" />
+            <element signature="e#1761#1962#0" expanded="false" />
+            <element signature="e#1963#2150#0" expanded="false" />
+            <element signature="e#2390#2744#0" expanded="false" />
+            <element signature="e#2746#2792#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -650,11 +631,11 @@
             <element signature="e#64#108#0" expanded="false" />
             <element signature="e#109#156#0" expanded="false" />
             <element signature="e#158#592#0" expanded="false" />
-            <element signature="e#593#1807#0" expanded="false" />
-            <element signature="e#1810#2011#0" expanded="false" />
-            <element signature="e#2012#2199#0" expanded="false" />
-            <element signature="e#2439#2793#0" expanded="false" />
-            <element signature="e#2795#2841#0" expanded="false" />
+            <element signature="e#593#1758#0" expanded="false" />
+            <element signature="e#1761#1962#0" expanded="false" />
+            <element signature="e#1963#2150#0" expanded="false" />
+            <element signature="e#2390#2744#0" expanded="false" />
+            <element signature="e#2746#2792#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -699,11 +680,11 @@
             <element signature="e#64#108#0" expanded="false" />
             <element signature="e#109#156#0" expanded="false" />
             <element signature="e#158#592#0" expanded="false" />
-            <element signature="e#593#1807#0" expanded="false" />
-            <element signature="e#1810#2011#0" expanded="false" />
-            <element signature="e#2012#2199#0" expanded="false" />
-            <element signature="e#2439#2793#0" expanded="false" />
-            <element signature="e#2795#2841#0" expanded="false" />
+            <element signature="e#593#1758#0" expanded="false" />
+            <element signature="e#1761#1962#0" expanded="false" />
+            <element signature="e#1963#2150#0" expanded="false" />
+            <element signature="e#2390#2744#0" expanded="false" />
+            <element signature="e#2746#2792#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -892,14 +873,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodeTree.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -926,6 +899,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CodeTree.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <element signature="e#64#108#0" expanded="false" />
+            <element signature="e#109#156#0" expanded="false" />
+            <element signature="e#158#592#0" expanded="false" />
+            <element signature="e#1761#1962#0" expanded="false" />
+            <element signature="e#1963#2150#0" expanded="false" />
+            <element signature="e#2152#2389#0" expanded="false" />
+            <element signature="e#2390#2744#0" expanded="false" />
+            <element signature="e#2746#2792#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CodeTree.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Encode.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -942,28 +940,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Decode.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+        <state relative-caret-position="318">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
-            <element signature="e#968#1050#0" expanded="false" />
-            <element signature="e#1052#1685#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CodeTree.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="56" column="36" lean-forward="false" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
-          <folding>
-            <element signature="e#64#108#0" expanded="false" />
-            <element signature="e#109#156#0" expanded="false" />
-            <element signature="e#158#592#0" expanded="false" />
-            <element signature="e#1810#2011#0" expanded="false" />
-            <element signature="e#2012#2199#0" expanded="false" />
-            <element signature="e#2201#2438#0" expanded="false" />
-            <element signature="e#2439#2793#0" expanded="false" />
-            <element signature="e#2795#2841#0" expanded="false" />
+            <element signature="e#970#1052#0" expanded="false" />
+            <element signature="e#1054#1687#0" expanded="false" />
           </folding>
         </state>
       </provider>
