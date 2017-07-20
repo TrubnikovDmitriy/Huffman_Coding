@@ -4,11 +4,11 @@
 
 int main() {
 
-    Encode *encode = new Encode("Makefile");
-    encode->encode("binary.dtv");
+    Encode *encode = new Encode("1.txt");
+    encode->encode("bin");
     delete encode;
 
-    Decode *decode = new Decode("binary.dtv");
+    Decode *decode = new Decode("bin");
     decode->decode("2.txt");
     delete decode;
 
