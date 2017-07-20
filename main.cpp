@@ -5,7 +5,7 @@
 int main() {
 
     Encode *encode = new Encode("Makefile");
-    encode->encode("binary");
+    encode->encode("binary.dtv");
     delete encode;
 
     Decode *decode = new Decode("binary.dtv");

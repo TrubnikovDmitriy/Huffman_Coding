@@ -1,7 +1,8 @@
+#include <climits>
 #include "Encode.hpp"
 
 Encode::Encode(string original_name): original_file(original_name),
-                                      lists(0), nodes(0) {
+                                      lists(0) {
 
 // 1) Парсим оригинальный файл вычисляем количество вхождений для каждой буквы
 // 2) С помощью кучи сортируем полученный массив и строим из него дерево
@@ -43,9 +44,12 @@ void Encode::encode(string compressed_name) {
     // Создаем кастомный бинарный райтер
     BinaryWriter* bw = new BinaryWriter(compressed_name);
 
-    // В первые 2+2 байта помещаем заголовочную информацию
-    bw->write((char*)&lists, sizeof(u_short));  // Количество листьев
-    bw->write((char*)&nodes, sizeof(u_short));  // Количество нод
+    assert(tree->getRoot()->amount < INT32_MAX);
+    uint32_t symbols = (u_short)tree->getRoot()->amount;
+
+    // В первые 2+4 байта помещаем заголовочную информацию
+    bw->write((char*)&lists, sizeof(u_short));      // Количество листьев
+    bw->write((char*)&symbols, sizeof(uint32_t));   // Количество знаков
     // Далее записываем дерево для декодирования
     writeNode(bw, tree->getRoot());
 
@@ -67,10 +71,10 @@ void Encode::countTreeSize(Node* node) {
 
     if (node->left == nullptr || node->right == nullptr) {
         assert(node->left == nullptr && node->right == nullptr);
+        // На всякий случай, убедиться, что дерево составлено правильно
         ++lists;
         return;
     } else {
-        ++nodes;
         countTreeSize(node->left);
         countTreeSize(node->right);
         return;

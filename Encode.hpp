@@ -24,11 +24,9 @@ private:
 
     Parser* parser;
     CodeTree* tree;
-    const string original_file;
     CodeDictionary<u_short, string>* encodeDictionary;
-
+    const string original_file;
     unsigned short lists;
-    unsigned short nodes;
 };
 
 #endif //ENCODE_HPP
