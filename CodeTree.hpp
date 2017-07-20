@@ -9,8 +9,8 @@ public:
     CodeTree();
     ~CodeTree();
 
+    uint32_t makeTree(BinaryReader *br);
     void makeTree(MinHeap *minHeap);
-    void makeTree(BinaryReader *br);
     void printTree();
     Node* getRoot();
 

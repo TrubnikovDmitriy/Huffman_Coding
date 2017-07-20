@@ -28,26 +28,26 @@ void CodeTree::makeTree(MinHeap *minHeap) {
     }
     root = temp1;
 }
-void CodeTree::makeTree(BinaryReader *br) {
+uint32_t CodeTree::makeTree(BinaryReader *br) {
     // Заранее оговорено, что структура закодированного файла будет следующей:
     //    - первые 2 байта - количетсво нод
-    //    - следующие 2 байта - количество узлов
+    //    - следующие 4 байта - количество знаков
     //    - дерево кодирования, сложенное по определенном алгоритму
     //    - сразу за деревом, закодированный текст.
 
-    u_short lists, nodes;
+    u_short lists;
+    uint32_t symbols;
     br->read((char*)&lists, sizeof(u_short));
-    br->read((char*)&nodes, sizeof(u_short));
+    br->read((char*)&symbols, sizeof(uint32_t));
 
     std::stack<Node*> stack;
 
     u_short count_lists = 0;
-    u_short count_nodes = 0;
     Node *right, *left;
     u_short ch;
     int flag;
 
-    while(count_nodes < nodes || count_lists < lists) {
+    while(count_lists < lists || stack.size() != 1) {
         flag = br->readBit();
         if (flag == 1) {
             ++count_lists;
@@ -56,20 +56,21 @@ void CodeTree::makeTree(BinaryReader *br) {
             stack.push(new Node(ch, 0));
         }
         if (flag == 0) {
-            ++count_nodes;
 
             right = stack.top();
             stack.pop();
+
             left = stack.top();
             stack.pop();
+
             Node* new_node = new Node();
             new_node->right = right;
             new_node->left = left;
             stack.push(new_node);
         }
     }
-    assert(stack.size() == 1);
     root = stack.top();
+    return symbols;
 }
 
 

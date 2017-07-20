@@ -19,8 +19,9 @@ public:
 private:
     CodeTree* tree;
     BinaryReader* br;
-    const string compressed_file;
     CodeDictionary<string, u_short>* decodeDictionary;
+    uint32_t symbols;
+    const string compressed_file;
 };
 
 #endif //DECODE_HPP
